@@ -7,82 +7,107 @@
 <meta name="description" content="Psicóloga General Sanitaria en Madrid (C/ O'Donnell 32, Retiro) y online. Terapia para adultos y adolescentes con enfoque integrativo. Primera llamada de 15 minutos gratuita.">
 <meta name="robots" content="index, follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#14284B;--blue:#014589;--muted:#4D586E;--line:#E5E3EA;--soft:#F7F6F9;--pink:#F3A6E6}
+:root{--ink:#14284B;--blue:#014589;--muted:#4D586E;--line:#E5E3EA;--soft:#F7F6F9;--blush:#FBF1F9}
 *{box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{margin:0;background:#fff;color:var(--ink);font-family:Montserrat,system-ui,sans-serif;font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
 a{color:var(--blue)}a:hover{color:var(--ink)}
 :focus-visible{outline:2px solid var(--blue);outline-offset:3px}
 h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;letter-spacing:-.01em;margin:0;line-height:1.12}
 p{margin:0}
 .wrap{max-width:1160px;margin:0 auto;padding:0 32px}
+.narrow{max-width:760px}
 .muted{color:var(--muted)}
 .label{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue)}
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:6px;font:600 15px/1 Montserrat,sans-serif;text-decoration:none;border:1.5px solid var(--blue);cursor:pointer;white-space:nowrap;transition:background-color .2s,color .2s,transform .15s}
 .btn:active{transform:translateY(1px)}
 .btn-p{background:var(--blue);color:#fff}.btn-p:hover{background:var(--ink);border-color:var(--ink);color:#fff}
-.btn-g{background:#fff;color:var(--blue)}.btn-g:hover{background:var(--blue);color:#fff}
 section{padding:96px 0}
-/* cabecera */
 header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .bar{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
-.nav{display:flex;gap:30px}
+.nav{display:flex;gap:28px}
 .nav a{color:var(--ink);text-decoration:none;font-size:14.5px;font-weight:500}
 .nav a:hover{color:var(--blue)}
-/* hero */
-.hero{padding:72px 0 88px;background:var(--soft);border-bottom:1px solid var(--line)}
+/* inicio */
+.hero{padding:64px 0 84px;background:var(--soft);border-bottom:1px solid var(--line)}
 .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:72px;align-items:start}
-.facts{list-style:none;margin:0;padding:24px 0 0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:14px 28px;font-size:15px}
+.hello{display:flex;align-items:center;gap:14px}
+.hello img{width:58px;height:58px;border-radius:50%;object-fit:cover;object-position:center 18%;border:2px solid #fff;box-shadow:0 0 0 1px var(--line)}
+.facts{list-style:none;margin:0;padding:22px 0 0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:12px 28px;font-size:15px}
 .facts li{display:grid;grid-template-columns:20px 1fr;gap:10px;align-items:start}
 .form{background:#fff;border:1px solid var(--line);border-radius:10px;padding:34px;display:flex;flex-direction:column;gap:16px;box-shadow:0 20px 50px -30px rgba(20,40,75,.25)}
 .lbl{display:flex;flex-direction:column;gap:7px;font-size:14px;font-weight:500}
 .inp{min-height:48px;border:1px solid #CFCCD8;border-radius:6px;padding:11px 14px;font:400 15px Montserrat,sans-serif;color:var(--ink);background:#fff}
 .inp:focus{border-color:var(--blue)}
 .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-/* ayuda */
-.areas{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
-.area{padding:30px 30px 34px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:10px;text-decoration:none;color:var(--ink);transition:background-color .2s}
-.area:hover{background:var(--soft)}
-.area h3{font-size:27px}
-/* sobre mí */
-.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:start}
-.photo{position:sticky;top:108px}
+/* te reconoces */
+.signs{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.signs li{padding:18px 0;border-top:1px solid var(--line);font-size:17px;display:grid;grid-template-columns:24px 1fr;gap:12px}
+.signs li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--blue);margin-top:11px}
+.bridge{margin-top:40px;padding:28px 32px;background:var(--blush);border-radius:10px;font-size:18px;max-width:880px}
+/* historia */
+.story-sec{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:start}
+.photo{position:sticky;top:108px;display:flex;flex-direction:column;gap:16px}
 .photo img{display:block;width:100%;height:auto;aspect-ratio:887/1024;object-fit:cover;border-radius:10px}
-.story{display:flex;flex-direction:column;gap:22px;font-size:17px;max-width:620px}
-.story h3{font-size:30px;margin-top:18px}
-.chips{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
-.chips li{padding:7px 14px;border:1px solid var(--line);border-radius:6px;font-size:14px;background:#fff}
-/* empezar y precios */
-.start{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.chapters{display:flex;flex-direction:column;gap:44px;max-width:640px}
+.ch{display:flex;flex-direction:column;gap:14px;font-size:17px}
+.ch h3{font-size:32px}
+.quote{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:30px;line-height:1.3;color:var(--blue);padding-left:24px;border-left:2px solid var(--blue)}
+/* cómo trabajo */
+.how{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.phases{list-style:none;margin:0;padding:0;counter-reset:p}
+.phases li{counter-increment:p;display:grid;grid-template-columns:48px 1fr;gap:16px;padding:22px 0;border-top:1px solid var(--line)}
+.phases li:last-child{border-bottom:1px solid var(--line)}
+.phases li::before{content:counter(p);font-family:'Cormorant Garamond',serif;font-size:32px;line-height:1;color:var(--blue)}
+.commit{display:flex;flex-direction:column;gap:22px}
+.cm{padding:24px 26px;border:1px solid var(--line);border-radius:10px;display:flex;flex-direction:column;gap:8px}
+.cm h3{font-size:25px}
+/* áreas */
+.areas{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.area{padding:28px 28px 32px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:10px;text-decoration:none;color:var(--ink);transition:background-color .2s}
+.area:hover{background:var(--soft)}
+.area h3{font-size:26px}
+.area span{font-size:14px;font-weight:600;color:var(--blue);margin-top:auto}
+.changes{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:56px;border-top:2px solid var(--ink)}
+.chg{padding:22px 24px 0 0;display:flex;flex-direction:column;gap:6px}
+.chg strong{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;line-height:1.2}
+/* formación */
+.train{background:var(--ink);color:#fff}
+.train-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:72px;align-items:start}
+.train .muted{color:#C9D1E0}
+.chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.chips li{padding:8px 14px;border:1px solid rgba(255,255,255,.28);border-radius:6px;font-size:14px}
+/* empezar */
 .start-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
-.steps{list-style:none;margin:0;padding:0;counter-reset:s;display:flex;flex-direction:column}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s}
 .steps li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:16px;padding:20px 0;border-top:1px solid var(--line)}
+.steps li:last-child{border-bottom:1px solid var(--line)}
 .steps li::before{content:counter(s);font-family:'Cormorant Garamond',serif;font-size:30px;line-height:1;color:var(--blue)}
 .prices{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
 .price{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;padding:22px 28px;border-top:1px solid var(--line)}
 .price:first-child{border-top:none}
 .price strong{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:34px;line-height:1}
-/* preguntas */
 .faqs{display:grid;grid-template-columns:1fr 1fr;gap:0 64px}
 .qa{padding:24px 0;border-top:1px solid var(--line)}
 .qa h3{font-size:24px;margin-bottom:8px}
-/* cierre */
-.close{background:var(--ink);color:#fff;padding:72px 0}
+.close{background:var(--soft);border-top:1px solid var(--line);padding:72px 0}
 .close-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:center}
-.close a{color:#fff}
-footer{background:#0F1F3B;color:#C9D1E0;padding:30px 0;font-size:13.5px}
+footer{background:var(--ink);color:#C9D1E0;padding:30px 0;font-size:13.5px}
 footer a{color:#C9D1E0}
 @media (max-width:960px){
 .wrap{padding:0 20px}section{padding:64px 0}
 .nav,.hide-m{display:none}
-.hero{padding:40px 0 56px}
-.hero-grid,.about,.start-grid,.faqs,.close-grid{grid-template-columns:1fr;gap:36px}
+.hero{padding:36px 0 56px}
+.hero-grid,.about,.how,.train-grid,.start-grid,.faqs,.close-grid,.signs{grid-template-columns:1fr;gap:32px}
+.signs{gap:0}
 .areas{grid-template-columns:1fr}
-.facts{grid-template-columns:1fr}
+.changes{grid-template-columns:1fr 1fr;gap:18px}
+.facts,.row2{grid-template-columns:1fr}
 .photo{position:static;max-width:420px}
 h1{font-size:44px !important}h2{font-size:36px !important}
-.row2{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -92,10 +117,10 @@ h1{font-size:44px !important}h2{font-size:36px !important}
 <div class="wrap bar">
 <a href="#" aria-label="Sol Prada, inicio"><img src="https://mariasolpradapsicologa.com/wp-content/uploads/2025/07/Sol-Prada-psicologia-sanitaria-1.png" alt="Sol Prada, psicología sanitaria" width="1598" height="592" style="height:50px;width:auto;display:block"></a>
 <nav class="nav" aria-label="Principal">
-<a href="#ayuda">En qué te ayudo</a>
 <a href="#sobre-mi">Sobre mí</a>
+<a href="#como-trabajo">Cómo trabajo</a>
+<a href="#ayuda">En qué te ayudo</a>
 <a href="#precios">Precios</a>
-<a href="#preguntas">Preguntas</a>
 </nav>
 <div style="display:flex;align-items:center;gap:20px">
 <a href="tel:+34601543169" class="hide-m" style="font-weight:600;font-size:14.5px;text-decoration:none;color:var(--ink)">601 543 169</a>
@@ -108,26 +133,29 @@ h1{font-size:44px !important}h2{font-size:36px !important}
 <section class="hero" id="contacto">
 <div class="wrap hero-grid">
 <div style="display:flex;flex-direction:column;gap:26px">
-<p class="label">Psicóloga General Sanitaria</p>
-<h1 style="font-size:64px">Psicóloga en Madrid y online</h1>
-<p style="font-size:19px;max-width:540px" class="muted">Terapia para adultos y adolescentes. Un espacio para entender lo que te está pasando y empezar a construir la vida que quieres.</p>
+<div class="hello">
+<img src="https://mariasolpradapsicologa.com/wp-content/uploads/2024/02/IMG-0786v2-1-887x1024.webp" alt="" width="58" height="58">
+<p style="font-size:15px;line-height:1.45"><strong style="font-weight:600">Hola, soy Sol.</strong><br><span class="muted">Psicóloga General Sanitaria · Colegiada M-42378</span></p>
+</div>
+<h1 style="font-size:62px">Psicóloga en Madrid y online</h1>
+<p style="font-size:19px;max-width:540px" class="muted">Terapia para adultos y adolescentes que sienten que podrían estar mejor y no saben por dónde empezar. Un espacio para entender lo que te pasa y construir, paso a paso, la vida que quieres.</p>
 <ul class="facts">
-<li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#014589" stroke-width="2" style="margin-top:4px"><path d="M5 12l4 4 10-10"/></svg>Colegiada M-42378</li>
 <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#014589" stroke-width="2" style="margin-top:4px"><path d="M5 12l4 4 10-10"/></svg>Consulta en C/ O'Donnell 32, Retiro</li>
 <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#014589" stroke-width="2" style="margin-top:4px"><path d="M5 12l4 4 10-10"/></svg>Sesiones online desde cualquier país</li>
+<li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#014589" stroke-width="2" style="margin-top:4px"><path d="M5 12l4 4 10-10"/></svg>Enfoque integrativo, adaptado a ti</li>
 <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#014589" stroke-width="2" style="margin-top:4px"><path d="M5 12l4 4 10-10"/></svg>Primera llamada de 15 minutos gratuita</li>
 </ul>
 </div>
 <form class="form" aria-label="Pedir llamada gratuita">
 <h2 style="font-size:32px">Pide tu llamada gratuita</h2>
-<p class="muted" style="font-size:14.5px;line-height:1.6">15 minutos por videollamada para conocernos y resolver tus dudas, sin compromiso. Te escribo por WhatsApp en menos de 24 horas laborables.</p>
+<p class="muted" style="font-size:14.5px;line-height:1.6">15 minutos por videollamada para conocernos, contarme qué te pasa y resolver tus dudas. Sin compromiso. Te escribo por WhatsApp en menos de 24 horas laborables.</p>
 <label class="lbl">Nombre<input class="inp" type="text" name="nombre" autocomplete="name" required></label>
 <div class="row2">
 <label class="lbl">Teléfono<input class="inp" type="tel" name="telefono" autocomplete="tel" required></label>
 <label class="lbl">Correo<input class="inp" type="email" name="email" autocomplete="email"></label>
 </div>
 <label class="lbl">Modalidad<select class="inp" name="modalidad"><option>Presencial en Madrid</option><option>Online</option><option>Aún no lo sé</option></select></label>
-<label class="lbl">Motivo de consulta <span class="muted" style="font-weight:400">(opcional)</span><textarea class="inp" name="motivo" rows="2" style="min-height:76px"></textarea></label>
+<label class="lbl">¿Qué te trae por aquí? (opcional)<textarea class="inp" name="motivo" rows="2" style="min-height:76px"></textarea></label>
 <label style="display:flex;gap:10px;align-items:flex-start;font-size:13px;line-height:1.5" class="muted"><input type="checkbox" name="privacidad" required style="width:18px;height:18px;margin-top:2px;accent-color:#014589">He leído y acepto la política de privacidad.</label>
 <button type="submit" class="btn btn-p" style="width:100%">Pedir llamada gratuita</button>
 <p style="font-size:14px;text-align:center">¿Prefieres escribirme? <a href="https://wa.me/34601543169" style="font-weight:600">WhatsApp</a></p>
@@ -135,60 +163,136 @@ h1{font-size:44px !important}h2{font-size:36px !important}
 </div>
 </section>
 
-<section id="ayuda">
-<div class="wrap" style="display:flex;flex-direction:column;gap:40px">
-<div style="display:flex;flex-direction:column;gap:14px;max-width:680px">
-<h2 style="font-size:48px">En qué te puedo ayudar</h2>
-<p class="muted" style="font-size:17px">Acompaño a personas con motivos de consulta muy distintos. Estos son algunos de los más habituales.</p>
+<section>
+<div class="wrap">
+<div class="narrow" style="display:flex;flex-direction:column;gap:14px;margin-bottom:36px">
+<h2 style="font-size:46px">No hace falta estar muy mal para empezar terapia</h2>
+<p class="muted" style="font-size:17px">Muchas de las personas que llegan a mi consulta tienen una vida aparentemente en orden. Trabajan, cumplen, sostienen a los demás. Y aun así, algo no termina de encajar.</p>
 </div>
-<div class="areas">
-<a href="#" class="area"><h3>Ansiedad y estrés</h3><p class="muted">Cuando la preocupación, los nervios o el cansancio empiezan a ocupar demasiado espacio.</p></a>
-<a href="autoestima/" class="area"><h3>Autoestima</h3><p class="muted">Para dejar de exigirte tanto, aprender a poner límites y tratarte con más respeto.</p></a>
-<a href="#" class="area"><h3>Relaciones y dependencia emocional</h3><p class="muted">Para construir vínculos más equilibrados con tu pareja, tu familia o tus amistades.</p></a>
-<a href="#" class="area"><h3>Depresión</h3><p class="muted">Cuando todo cuesta más de lo normal y no sabes por dónde empezar.</p></a>
-<a href="#" class="area"><h3>Duelo y cambios vitales</h3><p class="muted">Pérdidas, rupturas, mudanzas o la adaptación a vivir en otro país.</p></a>
-<a href="#" class="area"><h3>Psicología perinatal</h3><p class="muted">Acompañamiento durante el embarazo, el posparto o la búsqueda de un hijo.</p></a>
-</div>
-<p class="muted" style="font-size:16px">Si lo que te ocurre no aparece aquí, escríbeme y lo valoramos en la llamada gratuita.</p>
+<ul class="signs">
+<li>Te cuesta decir que no y luego te sientes desbordada o desbordado.</li>
+<li>Repites en tus relaciones dinámicas que no te hacen bien.</li>
+<li>La ansiedad o la preocupación ocupan más espacio del que te gustaría.</li>
+<li>Te exiges mucho y nada de lo que haces parece suficiente.</li>
+<li>Estás atravesando un cambio o una pérdida que te cuesta procesar.</li>
+<li>Lo has intentado por tu cuenta y sientes que vuelves al mismo sitio.</li>
+</ul>
+<p class="bridge">Si te reconoces en algo de esto, no significa que haya algo mal en ti. Muchas veces son patrones que aprendimos hace tiempo y que, con el acompañamiento adecuado, se pueden cambiar. Te cuento quién soy y cómo trabajo.</p>
 </div>
 </section>
 
-<section id="sobre-mi" style="padding-top:24px">
+<section class="story-sec" id="sobre-mi">
 <div class="wrap about">
 <div class="photo">
 <img src="https://mariasolpradapsicologa.com/wp-content/uploads/2024/02/IMG-0786v2-1-887x1024.webp" alt="María Sol Prada, psicóloga general sanitaria en Madrid" width="887" height="1024" loading="lazy">
+<p class="muted" style="font-size:14px">María Sol Prada · Psicóloga General Sanitaria</p>
 </div>
-<div class="story">
+<div class="chapters">
+<div class="ch">
 <p class="label">Sobre mí</p>
-<h2 style="font-size:48px">Soy María Sol Prada, psicóloga general sanitaria</h2>
-<p>Siempre me ha interesado entender qué hay detrás de lo que sentimos y de lo que hacemos. Esa curiosidad me llevó a la psicología y sigue siendo la base de mi trabajo: antes de proponer cambios, me importa comprender tu historia y qué te ha traído hasta aquí.</p>
-<p>Me formé en Argentina y hoy vivo y trabajo en Madrid. Atiendo en mi consulta del barrio de Retiro y también online, lo que me permite acompañar a personas que viven en otras ciudades o fuera de su país.</p>
-
-<h3>Cómo trabajo</h3>
-<p>Trabajo desde un enfoque integrativo. Esto significa que no aplico el mismo método a todas las personas: utilizo herramientas de distintas corrientes con respaldo científico, como la terapia de aceptación y compromiso, y las adapto a lo que necesitas en cada momento.</p>
-<p>En las primeras sesiones nos conocemos y entendemos qué está pasando. A partir de ahí definimos las líneas de trabajo y las vamos revisando a medida que avanzamos. Cada sesión parte de lo que tú traes ese día, a tu ritmo, y con la claridad necesaria para que puedas avanzar.</p>
-
-<h3>Formación continua</h3>
-<p>Seguir formándome es parte de mi compromiso con las personas que acompaño. Este año he completado formaciones en distintas áreas clínicas y actualmente me estoy formando en EMDR.</p>
-<ul class="chips" aria-label="Formaciones recientes">
-<li>Ansiedad</li><li>Ansiedad social</li><li>Depresión</li><li>Autoestima</li><li>Apego</li><li>Duelo</li><li>TDAH</li><li>Psicología perinatal</li><li>EMDR (en curso)</li>
-</ul>
-<p class="muted" style="font-size:14.5px">Colegiada en el Colegio Oficial de la Psicología de Madrid con el número M-42378.</p>
+<h2 style="font-size:48px">Por qué hago lo que hago</h2>
+</div>
+<div class="ch">
+<h3>Una curiosidad que empezó pronto</h3>
+<p>Desde pequeña me preguntaba qué hay detrás de lo que sentimos y de lo que hacemos. Sigo pensando lo mismo: la mente está detrás de todo. Puede llevarnos a repetir lo que nos hace daño, pero también a construir nuestra mejor versión. Esa idea es la que me llevó a la psicología.</p>
+</div>
+<div class="ch">
+<h3>Creo en la terapia porque la he visto funcionar</h3>
+<p>La he visto en consulta, en personas que llegaron convencidas de que lo suyo no tenía arreglo y que, con el tiempo, aprendieron a poner límites, a valorarse y a relacionarse de otra manera.</p>
+<p>Y la he vivido como paciente. Durante años me vinculé con personas que no estaban disponibles y me costaba comunicar lo que sentía sin entrar en conflicto. La terapia me ayudó a cambiar esa forma de relacionarme, conmigo y con los demás. Por eso sé, también desde dentro, que el cambio es posible.</p>
+<p class="quote">«La terapia no transforma a todo el mundo de la misma manera, pero cuando encuentra su espacio, puede cambiar mucho.»</p>
+</div>
+<div class="ch">
+<h3>De Argentina a Madrid</h3>
+<p>Me formé en Argentina, en una tradición clínica que da mucho valor a la escucha. Al emigrar a España tuve que empezar de nuevo, y lo hice sin dejar de trabajar en lo que me apasiona. Esa experiencia también forma parte de cómo acompaño hoy, especialmente a quienes viven cambios importantes o están lejos de casa.</p>
+</div>
+<p><a href="#contacto" class="btn btn-p">Pedir llamada gratuita</a></p>
 </div>
 </div>
 </section>
 
-<section class="start" id="precios">
+<section id="como-trabajo">
+<div class="wrap">
+<div class="narrow" style="display:flex;flex-direction:column;gap:14px;margin-bottom:44px">
+<h2 style="font-size:48px">Cómo trabajo</h2>
+<p class="muted" style="font-size:17px">Trabajo desde un enfoque integrativo. Eso significa que no aplico el mismo método a todas las personas: uso herramientas de distintas corrientes con respaldo científico, como la terapia de aceptación y compromiso, y las adapto a ti y a tu momento.</p>
+</div>
+<div class="how">
+<div>
+<h3 style="font-size:28px;margin-bottom:12px">Cómo es el proceso</h3>
+<ol class="phases">
+<li><div><h3 style="font-size:23px;margin-bottom:4px">Conocerte</h3><p class="muted">Las primeras sesiones sirven para entender qué te pasa, de dónde viene y qué te gustaría cambiar.</p></div></li>
+<li><div><h3 style="font-size:23px;margin-bottom:4px">Definir hacia dónde ir</h3><p class="muted">Acordamos juntos las líneas de trabajo. No son objetivos rígidos: las revisamos a medida que avanzamos.</p></div></li>
+<li><div><h3 style="font-size:23px;margin-bottom:4px">Avanzar a tu ritmo</h3><p class="muted">Cada sesión parte de lo que traes ese día. Las herramientas y tareas surgen de lo que hablamos, no al revés.</p></div></li>
+</ol>
+</div>
+<div class="commit">
+<h3 style="font-size:28px">Lo que puedes esperar de mí</h3>
+<div class="cm"><h3>Que te escuche de verdad</h3><p class="muted">Lo prioritario es lo que tú traes a la sesión, no un guion preparado de antemano.</p></div>
+<div class="cm"><h3>Que te diga lo que pienso</h3><p class="muted">Con cuidado y con respeto, pero con claridad. Creo que es parte de mi trabajo y de lo que vienes a buscar.</p></div>
+<div class="cm"><h3>Que hablemos de tú a tú</h3><p class="muted">Sin tecnicismos ni distancia. Y si a veces nos reímos, mejor: el humor ayuda a mirar con otra perspectiva lo que pesa.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="ayuda" style="padding-top:24px">
+<div class="wrap">
+<div class="narrow" style="display:flex;flex-direction:column;gap:14px;margin-bottom:36px">
+<h2 style="font-size:48px">En qué te puedo ayudar</h2>
+<p class="muted" style="font-size:17px">Atiendo motivos de consulta muy distintos. Estos son los más habituales; si lo tuyo no aparece, escríbeme y lo valoramos en la llamada gratuita.</p>
+</div>
+<div class="areas">
+<a href="#" class="area"><h3>Ansiedad y estrés</h3><p class="muted">Cuando la preocupación, los nervios o el cansancio empiezan a ocupar demasiado espacio.</p><span>Saber más</span></a>
+<a href="autoestima/" class="area"><h3>Autoestima y límites</h3><p class="muted">Para dejar de exigirte tanto, aprender a decir que no y tratarte con más respeto.</p><span>Saber más</span></a>
+<a href="#" class="area"><h3>Relaciones y dependencia emocional</h3><p class="muted">Para construir vínculos más equilibrados con tu pareja, tu familia o tus amistades.</p><span>Saber más</span></a>
+<a href="#" class="area"><h3>Depresión</h3><p class="muted">Cuando todo cuesta más de lo normal y no sabes por dónde empezar.</p><span>Saber más</span></a>
+<a href="#" class="area"><h3>Duelo y cambios vitales</h3><p class="muted">Pérdidas, rupturas, mudanzas o la adaptación a vivir en otro país.</p><span>Saber más</span></a>
+<a href="#" class="area"><h3>Psicología perinatal</h3><p class="muted">Acompañamiento durante el embarazo, el posparto o la búsqueda de un hijo.</p><span>Saber más</span></a>
+</div>
+<div class="changes" aria-label="Lo que suele cambiar con la terapia">
+<div class="chg"><strong>Más valoración propia</strong><p class="muted" style="font-size:15px">Una relación contigo más amable y menos exigente.</p></div>
+<div class="chg"><strong>Vínculos más equilibrados</strong><p class="muted" style="font-size:15px">Relaciones donde no tienes que ganarte el sitio.</p></div>
+<div class="chg"><strong>Un papel activo</strong><p class="muted" style="font-size:15px">Decidir según lo que valoras, no solo reaccionar.</p></div>
+<div class="chg"><strong>Otra perspectiva</strong><p class="muted" style="font-size:15px">Quitar peso a lo que no lo merece.</p></div>
+</div>
+</div>
+</section>
+
+<section class="train">
+<div class="wrap train-grid">
+<div style="display:flex;flex-direction:column;gap:16px">
+<h2 style="font-size:46px;color:#fff">Formación y experiencia</h2>
+<p class="muted" style="font-size:17px">Para mí, seguir formándome no es un extra: es parte de mi responsabilidad con las personas que acompaño. Cada persona es distinta, y quiero tener los mejores recursos para ayudarte en lo que necesites.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:26px">
+<div style="display:flex;flex-direction:column;gap:6px">
+<p style="font-weight:600">Psicóloga General Sanitaria</p>
+<p class="muted">Colegio Oficial de la Psicología de Madrid, número M-42378.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px">
+<p style="font-weight:600">Experiencia clínica diversa</p>
+<p class="muted">He acompañado procesos de ansiedad, ansiedad social, depresión, autoestima, dificultades en las relaciones y de personalidad, en adultos y adolescentes.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-weight:600">Formación continua este año</p>
+<ul class="chips"><li>Ansiedad</li><li>Ansiedad social</li><li>Depresión</li><li>Autoestima</li><li>Apego</li><li>Duelo</li><li>TDAH</li><li>Psicología perinatal</li><li>EMDR (en curso)</li></ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="precios">
 <div class="wrap start-grid">
-<div style="display:flex;flex-direction:column;gap:24px">
+<div style="display:flex;flex-direction:column;gap:22px">
 <h2 style="font-size:44px">Cómo empezar</h2>
 <ol class="steps">
 <li><div><h3 style="font-size:24px">Me escribes</h3><p class="muted">Desde el formulario o por WhatsApp. Te respondo en menos de 24 horas laborables.</p></div></li>
 <li><div><h3 style="font-size:24px">Hablamos 15 minutos</h3><p class="muted">Una videollamada gratuita para conocernos y ver si puedo ayudarte.</p></div></li>
-<li style="border-bottom:1px solid var(--line)"><div><h3 style="font-size:24px">Primera sesión</h3><p class="muted">En la consulta de O'Donnell 32 o por videollamada, como prefieras.</p></div></li>
+<li><div><h3 style="font-size:24px">Primera sesión</h3><p class="muted">En la consulta de O'Donnell 32 o por videollamada, como prefieras.</p></div></li>
 </ol>
 </div>
-<div style="display:flex;flex-direction:column;gap:24px">
+<div style="display:flex;flex-direction:column;gap:22px">
 <h2 style="font-size:44px">Precios</h2>
 <div class="prices">
 <div class="price"><div><p style="font-weight:600">Llamada informativa</p><p class="muted" style="font-size:14.5px">15 minutos por videollamada</p></div><strong>0 €</strong></div>
@@ -200,28 +304,28 @@ h1{font-size:44px !important}h2{font-size:36px !important}
 </div>
 </section>
 
-<section id="preguntas">
-<div class="wrap" style="display:flex;flex-direction:column;gap:32px">
+<section style="padding-top:0">
+<div class="wrap" style="display:flex;flex-direction:column;gap:28px">
 <h2 style="font-size:44px">Preguntas frecuentes</h2>
 <div class="faqs">
-<div class="qa"><h3>¿Cómo sé si necesito terapia?</h3><p class="muted">No hace falta estar muy mal para empezar. Si algo te preocupa, se repite o te impide estar como quieres, es un buen motivo. La llamada gratuita sirve para valorarlo.</p></div>
-<div class="qa"><h3>¿Funciona igual la terapia online?</h3><p class="muted">Sí. La terapia online tiene una eficacia comparable a la presencial. Puedes elegir la modalidad con la que te sientas más cómoda o cómodo.</p></div>
-<div class="qa"><h3>¿Cada cuánto son las sesiones?</h3><p class="muted">Al principio suelen ser semanales y, con el tiempo, se van espaciando. La duración del proceso depende de cada persona.</p></div>
-<div class="qa"><h3>¿Qué pasa si necesito cancelar?</h3><p class="muted">Puedes cancelar o cambiar tu cita avisando con al menos 24 horas de antelación.</p></div>
+<div class="qa"><h3>¿Cómo sé si necesito terapia?</h3><p class="muted">Si algo te preocupa, se repite o te impide estar como quieres, es un buen motivo. La llamada gratuita sirve justo para valorarlo.</p></div>
+<div class="qa"><h3>Ya fui a terapia y no me sirvió</h3><p class="muted">Pasa más de lo que crees: no todos los psicólogos conectamos igual con todas las personas. Por eso empezamos con una llamada sin coste.</p></div>
+<div class="qa"><h3>¿Funciona igual la terapia online?</h3><p class="muted">Sí. Tiene una eficacia comparable a la presencial. Puedes elegir la modalidad con la que te sientas más cómodo o cómoda.</p></div>
+<div class="qa"><h3>¿Cada cuánto son las sesiones?</h3><p class="muted">Al principio, semanales; con el tiempo se espacian. Para cancelar o cambiar una cita, avísame con 24 horas de antelación.</p></div>
 </div>
 </div>
 </section>
 
 <section class="close">
 <div class="wrap close-grid">
-<div style="display:flex;flex-direction:column;gap:14px">
-<h2 style="font-size:44px;color:#fff">¿Hablamos?</h2>
-<p style="color:#D5DCEA;font-size:17px">Pide tu llamada gratuita de 15 minutos y resolvemos tus dudas antes de empezar.</p>
+<div style="display:flex;flex-direction:column;gap:12px">
+<h2 style="font-size:44px">¿Empezamos con una llamada?</h2>
+<p class="muted" style="font-size:17px">15 minutos, gratis y sin compromiso, para conocernos y ver si puedo ayudarte.</p>
 </div>
 <div style="display:flex;flex-direction:column;gap:12px;font-size:16px">
-<a href="#contacto" class="btn" style="background:#fff;color:var(--blue);border-color:#fff;align-self:flex-start">Pedir llamada gratuita</a>
+<a href="#contacto" class="btn btn-p" style="align-self:flex-start">Pedir llamada gratuita</a>
 <p><a href="tel:+34601543169" style="text-decoration:none;font-weight:600">(+34) 601 543 169</a> · <a href="https://wa.me/34601543169" style="text-decoration:none;font-weight:600">WhatsApp</a></p>
-<p style="color:#D5DCEA">C/ O'Donnell 32, 28009 Madrid · <a href="mailto:mariasolprada@gmail.com" style="color:#D5DCEA">mariasolprada@gmail.com</a></p>
+<p class="muted">C/ O'Donnell 32, 28009 Madrid · <a href="mailto:mariasolprada@gmail.com">mariasolprada@gmail.com</a></p>
 </div>
 </div>
 </section>
