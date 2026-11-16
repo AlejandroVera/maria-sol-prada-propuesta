@@ -4,197 +4,223 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Psicóloga para la autoestima en Madrid | María Sol Prada</title>
-<meta name="description" content="Terapia para la autoestima en Madrid, junto al Retiro, y online. Sesiones de 50 min: 60 € presencial, 53 € online. Primera llamada gratuita.">
+<meta name="description" content="Terapia para la autoestima y los límites en Madrid (Retiro) y online. Psicóloga General Sanitaria. Sesión presencial 60 €, online 53 €. Primera llamada gratuita.">
 <meta name="robots" content="index, follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-body{margin:0;background:#FAF7FB;color:#12254A;font-family:Montserrat,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+:root{--ink:#0F2242;--blue:#014589;--muted:#4A556B;--blush:#F8E9F4;--line:rgba(15,34,66,.14)}
 *{box-sizing:border-box}
-a{color:#014589}a:hover{color:#12254A}
-a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #014589;outline-offset:3px}
-.wrap{max-width:1200px;margin:0 auto;padding:0 40px}
-.d{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;letter-spacing:-.015em}
-.di{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:400}
-.muted{color:#4B5672}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 30px;border-radius:999px;font:600 15px/1 Montserrat,sans-serif;text-decoration:none;border:1.5px solid #014589;white-space:nowrap;cursor:pointer;transition:transform .25s cubic-bezier(.16,1,.3,1),background-color .25s,color .25s}
-.btn:active{transform:scale(.97)}
-.btn-p{background:#014589;color:#fff}.btn-p:hover{background:#12254A;border-color:#12254A;color:#fff}
-.btn-g{background:transparent;color:#014589}.btn-g:hover{background:#014589;color:#fff}
-.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:start}
-.lbl{display:flex;flex-direction:column;gap:7px;font-size:14px;font-weight:500}
-.inp{min-height:50px;border:1px solid #CFC4D9;border-radius:14px;padding:12px 15px;font:400 15px Montserrat,sans-serif;background:#fff;color:#12254A}
-.ctx{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:start}
-.note{border-radius:28px;padding:34px 36px}
-.vs{display:grid;grid-template-columns:1fr 1fr;border-radius:32px;overflow:hidden}
-.vs ul{list-style:none;margin:0;padding:44px 46px;display:flex;flex-direction:column;gap:22px}
-.vs li{font-size:17px;line-height:1.55;display:grid;grid-template-columns:28px 1fr;gap:12px}
-.about{display:grid;grid-template-columns:.75fr 1.25fr;gap:64px;align-items:center}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}
-.faqs{display:grid;grid-template-columns:1fr 1fr;gap:8px 56px}
-.qa{padding:24px 0;border-top:1px solid #E4DCEA}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:var(--ink);font-family:Montserrat,system-ui,sans-serif;font-size:16.5px;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:var(--blue)}a:hover{color:var(--ink)}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;margin:0;letter-spacing:-.02em}
+p{margin:0}
+.wrap{max-width:1240px;margin:0 auto;padding:0 48px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 30px;border-radius:2px;font:600 14.5px/1 Montserrat,sans-serif;letter-spacing:.02em;text-decoration:none;border:1.5px solid var(--ink);cursor:pointer;white-space:nowrap;transition:background-color .25s,color .25s}
+.btn-d{background:var(--ink);color:#fff}.btn-d:hover{background:var(--blue);border-color:var(--blue);color:#fff}
+.btn-l{background:#fff;color:var(--ink);border-color:#fff}.btn-l:hover{background:var(--blush);border-color:var(--blush)}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:74px;gap:24px;padding:0 48px}
+.nav{display:flex;gap:34px}
+.nav a{color:var(--ink);text-decoration:none;font-size:14px;font-weight:500}
+.nav a:hover{color:var(--blue)}
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:calc(100dvh - 74px)}
+.hero-photo{position:relative;background:#e9e3ea;min-height:560px}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%}
+.hero-text{background:var(--blush);padding:72px 72px 64px;display:flex;flex-direction:column;justify-content:center;gap:28px}
+.kicker{font-size:14px;font-weight:500;color:var(--muted)}
+.hero h1{font-size:88px;line-height:.98}
+.hero h1 em{font-style:italic;color:var(--blue)}
+.lead{font-size:18px;color:var(--muted);max-width:480px}
+.qform{display:grid;grid-template-columns:1fr 1fr;gap:18px 22px;max-width:520px}
+.f{display:flex;flex-direction:column;gap:4px;font-size:13px;font-weight:600;letter-spacing:.02em}
+.f input,.f select{border:none;border-bottom:1.5px solid var(--ink);background:transparent;padding:10px 0;font:400 16px Montserrat,sans-serif;color:var(--ink);border-radius:0}
+.f input:focus,.f select:focus{outline:none;border-bottom-color:var(--blue)}
+.consent{grid-column:1/-1;display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--muted);line-height:1.5}
+.consent input{width:18px;height:18px;margin-top:2px;accent-color:#0F2242}
+.qform .btn{grid-column:1/-1}
+.qnote{grid-column:1/-1;font-size:13px;color:var(--muted)}
+.manifesto{padding:140px 0}
+.manifesto p.big{font-family:'Cormorant Garamond',Georgia,serif;font-size:46px;line-height:1.25;letter-spacing:-.01em;max-width:1000px}
+.manifesto p.big em{color:var(--blue)}
+.manifesto p.small{margin-top:36px;max-width:560px;margin-left:auto;font-size:17px;color:var(--muted)}
+.about{background:var(--blush);padding:130px 0}
+.about-grid{display:grid;grid-template-columns:5fr 7fr;gap:96px;align-items:start}
+.about-head{position:sticky;top:120px}
+.about h2{font-size:104px;line-height:.9}
+.sign{margin-top:28px;font-size:14px;color:var(--muted)}
+.prose{display:flex;flex-direction:column;gap:24px;font-size:18px;max-width:640px}
+.prose>p:first-child::first-letter{font-family:'Cormorant Garamond',serif;float:left;font-size:92px;line-height:.8;padding:8px 12px 0 0;color:var(--blue)}
+.pull{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:36px;line-height:1.25;color:var(--blue);margin:20px 0}
+.how{background:var(--ink);color:#fff;padding:130px 0}
+.how h2{font-size:88px;line-height:.95;color:#fff}
+.how-intro{display:grid;grid-template-columns:5fr 7fr;gap:96px;align-items:end;margin-bottom:96px}
+.how-intro p{font-size:18px;color:#CBD2E1}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:56px}
+.steps li{display:flex;flex-direction:column;gap:14px}
+.steps .n{font-family:'Cormorant Garamond',serif;font-size:120px;line-height:.8;color:#F3A6E6}
+.steps h3{font-size:34px;color:#fff}
+.steps p{color:#CBD2E1}
+.help{padding:130px 0}
+.help h2{font-size:88px;line-height:.95;margin-bottom:64px}
+.rows{list-style:none;margin:0;padding:0}
+.rows a{display:grid;grid-template-columns:5fr 6fr 1fr;gap:40px;align-items:baseline;padding:30px 0;border-top:1px solid var(--line);text-decoration:none;color:var(--ink);transition:padding-left .3s cubic-bezier(.16,1,.3,1)}
+.rows li:last-child a{border-bottom:1px solid var(--line)}
+.rows a:hover{padding-left:14px}
+.rows h3{font-size:40px;line-height:1.05}
+.rows p{color:var(--muted)}
+.rows span{font-size:14px;font-weight:600;color:var(--blue);text-align:right}
+.help-note{margin-top:32px;color:var(--muted)}
+.start{background:var(--blush);padding:130px 0}
+.start-grid{display:grid;grid-template-columns:5fr 7fr;gap:96px;align-items:end}
+.start h2{font-size:88px;line-height:.95}
+.start p.intro{font-size:18px;color:var(--muted);margin-top:28px;max-width:440px}
+.prices{display:grid;grid-template-columns:repeat(3,1fr)}
+.price{padding:0 28px;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
+.price:first-child{border-left:none;padding-left:0}
+.price strong{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:84px;line-height:.9}
+.price span{font-weight:600;font-size:15px}
+.price small{font-size:14px;color:var(--muted);line-height:1.5}
+.faq{padding:130px 0}
+.faq-grid{display:grid;grid-template-columns:5fr 7fr;gap:96px}
+.faq h2{font-size:72px;line-height:.95}
+.qa{padding:26px 0;border-top:1px solid var(--line)}
+.qa:last-child{border-bottom:1px solid var(--line)}
+.qa h3{font-size:28px;margin-bottom:6px}
+.qa p{color:var(--muted)}
+.end{background:var(--ink);color:#fff;padding:120px 0}
+.end h2{font-size:96px;line-height:.92;color:#fff;max-width:900px}
+.end-row{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-top:56px;flex-wrap:wrap}
+.end-row p{color:#CBD2E1}
+.end-row a:not(.btn){color:#fff}
+footer{background:var(--ink);color:#9FAAC0;padding:0 0 36px;font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.14);padding-top:26px}
+footer a{color:#9FAAC0}
+@media (prefers-reduced-motion:reduce){*{transition:none !important}html{scroll-behavior:auto}}
+@media (max-width:1100px){.hero h1{font-size:68px}.hero-text{padding:56px 44px}}
+@media (max-width:900px){
+.wrap,.bar{padding:0 22px}
+.nav,.hide-m{display:none}
+.hero{grid-template-columns:1fr;min-height:0}
+.hero-photo{min-height:0;height:420px}
+.hero-text{padding:44px 22px 56px}
+.hero h1{font-size:52px}
+.qform{grid-template-columns:1fr}
+.manifesto,.about,.how,.help,.start,.faq,.end{padding:80px 0}
+.manifesto p.big{font-size:32px}
+.about-grid,.how-intro,.start-grid,.faq-grid{grid-template-columns:1fr;gap:36px}
+.about-head{position:static}
+.about h2,.how h2,.help h2,.start h2,.end h2{font-size:56px}
+.faq h2{font-size:48px}
+.steps{grid-template-columns:1fr;gap:40px}.steps .n{font-size:80px}
+.rows a{grid-template-columns:1fr;gap:8px}.rows span{text-align:left}
+.prices{grid-template-columns:1fr;gap:28px}.price{border-left:none;padding:0}
+}
+
+.lhead .bar{justify-content:space-between}
+.mini{padding:110px 0}
+.mini .prose{max-width:760px}
+.mini h2{font-size:72px;line-height:.95;margin-bottom:36px}
+.back{display:inline-block;margin-top:8px;font-weight:600;font-size:15px}
 .sticky-m{display:none}
-@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
-@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
-@media (prefers-reduced-motion:no-preference){
-.r1{animation:rise .9s cubic-bezier(.16,1,.3,1) both}
-.r2{animation:rise .9s .12s cubic-bezier(.16,1,.3,1) both}
-.r3{animation:rise .9s .24s cubic-bezier(.16,1,.3,1) both}
-.thread{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.2s .4s cubic-bezier(.65,0,.35,1) forwards}
-}
-@media (max-width:960px){
-.wrap{padding:0 20px}
-.hero,.about,.faqs{grid-template-columns:1fr;gap:32px}
-.ctx{grid-template-columns:1fr}.ctx>*{grid-column:auto !important;margin-top:0 !important;transform:none !important}
-.vs{grid-template-columns:1fr}.vs ul{padding:32px 26px}
-.steps{grid-template-columns:1fr;gap:24px}
-.h1{font-size:44px !important}.h2{font-size:36px !important}
-.hide-m{display:none !important}.sticky-m{display:flex}
-}
+@media (max-width:900px){.mini{padding:72px 0}.mini h2{font-size:48px}.sticky-m{display:flex;position:sticky;bottom:0;z-index:10;gap:10px;padding:10px 14px;background:rgba(255,255,255,.96);border-top:1px solid var(--line)}.sticky-m .btn{flex:1;min-height:48px;padding:0 12px}}
 </style>
 </head>
 <body>
-<div style="width:100%;min-height:5000px;background:#FAF7FB;overflow:hidden">
-
-<header style="border-bottom:1px solid #E4DCEA">
-<div class="wrap" style="display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px">
-<div style="display:flex;align-items:center;gap:12px">
-<img src="https://mariasolpradapsicologa.com/wp-content/uploads/2025/07/Sol-Prada-psicologia-sanitaria-1.png" alt="Sol Prada, psicología sanitaria" width="1598" height="592" style="height:52px;width:auto;display:block">
+<header class="lhead">
+<div class="bar">
+<a href="../" aria-label="Sol Prada, inicio"><img src="https://mariasolpradapsicologa.com/wp-content/uploads/2025/07/Sol-Prada-psicologia-sanitaria-1.png" alt="Sol Prada, psicología sanitaria" width="1598" height="592" style="height:48px;width:auto;display:block"></a>
+<div style="display:flex;align-items:center;gap:22px">
+<a href="tel:+34601543169" class="hide-m" style="font-weight:600;font-size:14px;text-decoration:none;color:var(--ink)">601 543 169</a>
+<a href="#contacto" class="btn btn-d" style="min-height:44px;padding:0 20px">Pedir llamada gratuita</a>
 </div>
-<a href="tel:+34601543169" class="btn btn-g" style="min-height:44px;padding:0 20px">Llamar al 601 543 169</a>
 </div>
 </header>
-
 <main>
-<section style="padding:56px 0 90px;position:relative">
-<svg aria-hidden="true" viewBox="0 0 400 360" style="position:absolute;right:-90px;top:250px;width:420px;opacity:.18">
-<path d="M200 172C176 128 128 46 68 50C26 53 16 112 44 156C72 198 148 196 200 178Z" fill="#F3A6E6"/>
-<path d="M200 184C162 192 104 210 92 258C82 300 128 324 160 294C186 268 196 222 200 188Z" fill="#014589"/>
-<path d="M200 172C224 128 272 46 332 50C374 53 384 112 356 156C328 198 252 196 200 178Z" fill="#014589"/>
-<path d="M200 184C238 192 296 210 308 258C318 300 272 324 240 294C214 268 204 222 200 188Z" fill="#F3A6E6"/>
-</svg>
-<div class="wrap hero" style="position:relative">
-<div style="display:flex;flex-direction:column;gap:26px">
-<p class="di r1" style="margin:0;font-size:22px;color:#014589">Junto al Retiro y online</p>
-<h1 class="d h1 r2" style="margin:0;font-size:70px;line-height:1.02;text-wrap:balance">Psicóloga para la autoestima en Madrid</h1>
-<p class="r3 muted" style="margin:0;font-size:19px;line-height:1.65;max-width:500px">Para que dejes de tratarte peor de lo que tratarías a cualquiera. Terapia cercana, honesta y sin rodeos.</p>
-<div class="r3" style="display:grid;grid-template-columns:auto auto auto;gap:0;justify-content:start;border-top:1px solid #E4DCEA;border-bottom:1px solid #E4DCEA;margin-top:6px">
-<div style="padding:18px 26px 18px 0"><span class="d" style="font-size:30px;display:block">0 €</span><span class="muted" style="font-size:13.5px">Llamada de 15 min</span></div>
-<div style="padding:18px 26px;border-left:1px solid #E4DCEA"><span class="d" style="font-size:30px;display:block">60 €</span><span class="muted" style="font-size:13.5px">Sesión presencial</span></div>
-<div style="padding:18px 26px;border-left:1px solid #E4DCEA"><span class="d" style="font-size:30px;display:block">53 €</span><span class="muted" style="font-size:13.5px">Sesión online</span></div>
-</div>
-<svg aria-hidden="true" class="hide-m" viewBox="0 0 300 80" style="width:280px;overflow:visible"><path class="thread" pathLength="1" d="M4 20c40 60 90 60 130 30s100-40 160 20" fill="none" stroke="#12254A" stroke-width="1.4" stroke-linecap="round"/></svg>
-</div>
-<form id="form" class="r2" style="background:#fff;border-radius:30px;padding:36px;display:flex;flex-direction:column;gap:16px;box-shadow:0 30px 70px -34px rgba(18,37,74,.32)" aria-label="Pedir llamada gratuita">
-<h2 class="d" style="margin:0;font-size:34px;line-height:1.1">Pide tu llamada gratuita</h2>
-<p class="muted" style="margin:0;font-size:14.5px;line-height:1.55">15 minutos para conocernos y ver si encajamos. Te escribo por WhatsApp en menos de 24 horas laborables.</p>
-<label class="lbl">Nombre<input class="inp" type="text" name="nombre" autocomplete="name" required></label>
-<label class="lbl">Teléfono (WhatsApp)<input class="inp" type="tel" name="telefono" autocomplete="tel" required></label>
-<label class="lbl">Modalidad<select class="inp" name="modalidad"><option>Presencial en Madrid</option><option>Online</option></select></label>
-<label class="lbl">En dos líneas, ¿qué te trae? <span style="font-weight:400;color:#4B5672">(opcional)</span><textarea class="inp" name="motivo" rows="2" style="min-height:78px"></textarea></label>
-<label style="display:flex;gap:12px;font-size:13px;line-height:1.5;color:#4B5672;align-items:flex-start"><input type="checkbox" name="privacidad" required style="margin-top:2px;width:20px;height:20px;accent-color:#014589">Acepto la política de privacidad.</label>
-<button type="submit" class="btn btn-p" style="width:100%">Pedir llamada gratuita</button>
-<a href="https://wa.me/34601543169" style="text-align:center;font-size:14px;font-weight:600">O escríbeme por WhatsApp</a>
+<section class="hero" id="contacto">
+<div class="hero-photo"><img src="https://mariasolpradapsicologa.com/wp-content/uploads/2024/02/IMG-0786v2-1.webp" alt="María Sol Prada, psicóloga en Madrid" width="1800" height="2079" fetchpriority="high"></div>
+<div class="hero-text">
+<p class="kicker">María Sol Prada · Psicóloga General Sanitaria · M-42378</p>
+<h1>Psicóloga para la autoestima <em>en Madrid</em></h1>
+<p class="lead">Para que dejes de tratarte peor de lo que tratarías a cualquiera. En mi consulta del Retiro o por videollamada.</p>
+<form class="qform" action="../gracias/" method="get" aria-label="Pedir llamada gratuita">
+<label class="f">Nombre<input type="text" name="nombre" autocomplete="name" required></label>
+<label class="f">Teléfono<input type="tel" name="telefono" autocomplete="tel" required></label>
+<label class="f" style="grid-column:1/-1">Modalidad<select name="modalidad"><option>Presencial en Madrid</option><option>Online</option><option>Aún no lo sé</option></select></label>
+<label class="consent"><input type="checkbox" name="privacidad" required>He leído y acepto la política de privacidad.</label>
+<button type="submit" class="btn btn-d">Pedir llamada gratuita de 15 minutos</button>
+<p class="qnote">Sin compromiso. Te escribo por WhatsApp en menos de 24 horas laborables, o <a href="https://wa.me/34601543169">escríbeme tú</a>.</p>
 </form>
 </div>
 </section>
 
-<section style="padding:110px 0;background:#F3EDF6;border-radius:56px 56px 0 0">
-<div class="wrap" style="display:flex;flex-direction:column;gap:52px">
-<h2 class="d h2" style="margin:0;font-size:54px;line-height:1.05;max-width:760px;text-wrap:balance">La autoestima baja no siempre se nota. Pero se cuela en todo.</h2>
-<div class="ctx">
-<div class="note" style="grid-column:1 / span 5;background:#fff;transform:rotate(-1deg)"><p class="di" style="margin:0 0 10px;font-size:26px;color:#014589">En el trabajo</p><p style="margin:0;font-size:17px;line-height:1.7">Rindes de sobra, pero sientes que en cualquier momento descubrirán que no eres para tanto. Y no te atreves a pedir lo que mereces.</p></div>
-<div class="note" style="grid-column:6 / span 7;margin-top:70px;background:#12254A;color:#fff"><p class="di" style="margin:0 0 10px;font-size:26px;color:#F3A6E6">En tus relaciones</p><p style="margin:0;font-size:17px;line-height:1.7;color:#E3E8F2">Idealizas a quien no está disponible, te adaptas hasta desaparecer y te conformas con menos de lo que darías tú.</p></div>
-<div class="note" style="grid-column:3 / span 6;margin-top:-20px;background:#EAF0F7"><p class="di" style="margin:0 0 10px;font-size:26px;color:#014589">Contigo</p><p style="margin:0;font-size:17px;line-height:1.7">Te exiges sin descanso, dudas de tu criterio y te hablas de una forma que no tolerarías en nadie más.</p></div>
+<section class="manifesto">
+<div class="wrap">
+<p class="big">La autoestima baja no siempre se nota. Se cuela en el trabajo, cuando no te atreves a pedir lo que mereces; en las relaciones, cuando te adaptas hasta desaparecer; y contigo, <em>cuando nada de lo que haces parece suficiente.</em></p>
+<p class="small">No se trata de quererte a la fuerza ni de repetir frases bonitas. Se trata de dejar de ir en tu contra.</p>
+</div>
+</section>
+
+<section class="how">
+<div class="wrap">
+<div class="how-intro">
+<h2>Cómo trabajamos la autoestima</h2>
+<p>Entendemos de dónde vienen tus exigencias y tu forma de hablarte, y practicamos poco a poco otra manera de estar contigo y con los demás: poner límites, priorizarte y decidir según lo que valoras.</p>
+</div>
+<ol class="steps"><li><span class="n" aria-hidden="true">1</span><h3>Entender de dónde viene</h3><p>Qué aprendiste sobre ti, qué mensajes te acompañan y en qué situaciones se activan.</p></li><li><span class="n" aria-hidden="true">2</span><h3>Poner límites</h3><p>Aprender a decir que no sin culpa y a expresar lo que necesitas, también en tus relaciones.</p></li><li><span class="n" aria-hidden="true">3</span><h3>Elegir por ti</h3><p>Construir decisiones y vínculos a partir de lo que valoras, no de lo que esperan de ti.</p></li></ol>
+</div>
+</section>
+
+<section class="mini">
+<div class="wrap about-grid">
+<div class="about-head"><h2 style="margin:0">Quién te va a acompañar</h2><p class="sign">María Sol Prada<br>Psicóloga General Sanitaria, colegiada M-42378</p></div>
+<div class="prose">
+<p>Soy María Sol Prada, psicóloga general sanitaria. Me formé en Argentina, en una tradición clínica que da mucho valor a la escucha, y hoy trabajo en Madrid desde un enfoque integrativo: uso herramientas con respaldo científico, como la terapia de aceptación y compromiso, y las adapto a cada persona.</p>
+<p>Creo en la terapia porque la he visto funcionar, en consulta y también en mí. Escucho primero, te digo lo que pienso con claridad y respeto, y avanzamos a tu ritmo. Y sigo formándome cada año para ofrecerte los mejores recursos.</p>
+<a class="back" href="../#sobre-mi">Conocer mi historia completa</a>
 </div>
 </div>
 </section>
 
-<section style="padding:110px 0;background:#F3EDF6">
-<div class="wrap" style="display:flex;flex-direction:column;gap:44px">
-<div style="max-width:720px;display:flex;flex-direction:column;gap:16px">
-<h2 class="d h2" style="margin:0;font-size:54px;line-height:1.05">No se trata de quererte a la fuerza</h2>
-<p class="muted" style="margin:0;font-size:18px;line-height:1.7">Se trata de dejar de ir en tu contra. La autoestima no aparece repitiendo frases bonitas: se construye entendiendo tus patrones y practicando otra forma de estar contigo.</p>
+<section class="start" id="precios">
+<div class="wrap start-grid">
+<div>
+<h2>Empezar es sencillo</h2>
+<p class="intro">Me escribes, hablamos 15 minutos por videollamada para conocernos y, si encajamos, reservamos tu primera sesión.</p>
 </div>
-<div class="vs">
-<ul style="background:#fff">
-<li style="font-size:14px;font-weight:600;color:#4B5672;display:block">Ahora</li>
-<li><span aria-hidden="true" style="color:#4B5672">·</span>Dices que sí y luego te arrepientes.</li>
-<li><span aria-hidden="true" style="color:#4B5672">·</span>Te esfuerzas por ganarte el sitio en tus relaciones.</li>
-<li><span aria-hidden="true" style="color:#4B5672">·</span>Tu voz interior te juzga todo el día.</li>
-<li><span aria-hidden="true" style="color:#4B5672">·</span>Decides según lo que esperan de ti.</li>
-</ul>
-<ul style="background:#014589;color:#fff">
-<li style="font-size:14px;font-weight:600;color:#F3A6E6;display:block">Con terapia</li>
-<li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F3A6E6" stroke-width="2"><path d="M5 12l4 4 10-10"/></svg>Pones límites sin sentirte la mala de la película.</li>
-<li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F3A6E6" stroke-width="2"><path d="M5 12l4 4 10-10"/></svg>Construyes vínculos donde hay equilibrio.</li>
-<li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F3A6E6" stroke-width="2"><path d="M5 12l4 4 10-10"/></svg>Tu voz interior te acompaña en vez de castigarte.</li>
-<li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F3A6E6" stroke-width="2"><path d="M5 12l4 4 10-10"/></svg>Eliges según lo que valoras tú.</li>
-</ul>
+<div class="prices">
+<div class="price"><strong>0 €</strong><span>Llamada inicial</span><small>15 minutos por videollamada</small></div>
+<div class="price"><strong>60 €</strong><span>Sesión presencial</span><small>50 minutos en C/ O'Donnell 32. Tarjeta o efectivo</small></div>
+<div class="price"><strong>53 €</strong><span>Sesión online</span><small>50 minutos por videollamada. Bizum o transferencia</small></div>
 </div>
 </div>
 </section>
 
-<section style="padding:120px 0">
-<div class="wrap about">
-<div style="position:relative;max-width:380px">
-<img src="https://mariasolpradapsicologa.com/wp-content/uploads/2024/02/IMG-0786v2-1-887x1024.webp" alt="María Sol Prada, psicóloga para la autoestima en Madrid" width="887" height="1024" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:999px 999px 30px 30px">
-<div style="position:absolute;inset:-14px 14px 14px -14px;border-radius:999px 999px 30px 30px;border:1.2px solid #F3A6E6;pointer-events:none"></div>
-</div>
-<div style="display:flex;flex-direction:column;gap:22px">
-<p class="di" style="margin:0;font-size:42px;line-height:1.14;text-wrap:balance">«Yo también me vinculé durante años con gente que no estaba disponible. Por eso sé que se puede cambiar.»</p>
-<p class="muted" style="margin:0;font-size:17px;line-height:1.8;max-width:580px">Soy Sol, psicóloga general sanitaria. Te escucho de verdad, uso el humor para aliviar lo que pesa y, si hay algo que decirte, te lo digo. Sin pedestal.</p>
-<p style="margin:0;font-size:14.5px;line-height:1.7">Colegiada M-42378<br>Enfoque integrativo y terapia de aceptación y compromiso<br>Formación continua en apego, ansiedad y duelo</p>
-</div>
+<section class="faq">
+<div class="wrap faq-grid">
+<h2>Preguntas frecuentes</h2>
+<div><div class="qa"><h3>¿Se puede mejorar la autoestima en terapia?</h3><p>Sí. La autoestima se aprende, y también se puede trabajar. Muchas personas notan cambios cuando empiezan a entender sus patrones y a practicar límites.</p></div><div class="qa"><h3>Ya fui a terapia y no me sirvió</h3><p>Pasa más de lo que crees: el encaje con la psicóloga pesa mucho. Por eso empezamos con una llamada sin coste.</p></div><div class="qa"><h3>¿Funciona igual la terapia online?</h3><p>Sí, tiene una eficacia comparable a la presencial. Puedes elegir la modalidad con la que te sientas más cómodo o cómoda.</p></div></div>
 </div>
 </section>
 
-<section style="padding:100px 0;background:#EAF0F7;border-radius:56px">
-<div class="wrap" style="display:flex;flex-direction:column;gap:48px">
-<h2 class="d h2" style="margin:0;font-size:52px;line-height:1.05">Cómo empezamos</h2>
-<ol class="steps" style="list-style:none;margin:0;padding:0">
-<li style="display:flex;flex-direction:column;gap:12px"><span class="d" style="width:58px;height:58px;border-radius:50%;border:1.5px solid #014589;display:flex;align-items:center;justify-content:center;font-size:28px">1</span><h3 style="margin:0;font-size:18px;font-weight:600">Me dejas tus datos</h3><p class="muted" style="margin:0;font-size:15.5px;line-height:1.65">Menos de un minuto. Te escribo por WhatsApp.</p></li>
-<li style="display:flex;flex-direction:column;gap:12px"><span class="d" style="width:58px;height:58px;border-radius:50%;background:#F3A6E6;display:flex;align-items:center;justify-content:center;font-size:28px">2</span><h3 style="margin:0;font-size:18px;font-weight:600">Llamada gratuita de 15 minutos</h3><p class="muted" style="margin:0;font-size:15.5px;line-height:1.65">Nos conocemos y vemos si soy la psicóloga que buscas.</p></li>
-<li style="display:flex;flex-direction:column;gap:12px"><span class="d" style="width:58px;height:58px;border-radius:50%;background:#014589;color:#fff;display:flex;align-items:center;justify-content:center;font-size:28px">3</span><h3 style="margin:0;font-size:18px;font-weight:600">Primera sesión</h3><p class="muted" style="margin:0;font-size:15.5px;line-height:1.65">En O'Donnell 32 o por videollamada.</p></li>
-</ol>
-<a href="#form" class="btn btn-p" style="align-self:flex-start">Pedir llamada gratuita</a>
-</div>
-</section>
-
-<section style="padding:110px 0">
-<div class="wrap" style="display:flex;flex-direction:column;gap:32px">
-<h2 class="d h2" style="margin:0;font-size:50px;line-height:1.05">Dudas habituales</h2>
-<div class="faqs">
-<div class="qa"><h3 class="d" style="margin:0 0 8px;font-size:26px">¿Cuándo se notan los cambios?</h3><p class="muted" style="margin:0;font-size:16px;line-height:1.7">Muchas personas sienten alivio en las primeras semanas, al entender qué les pasa. El cambio profundo lleva más, y lo revisamos juntas.</p></div>
-<div class="qa"><h3 class="d" style="margin:0 0 8px;font-size:26px">Ya fui a terapia y no me sirvió</h3><p class="muted" style="margin:0;font-size:16px;line-height:1.7">El encaje con la terapeuta pesa mucho. Por eso empezamos con una llamada sin coste: si no encajamos, no pasa nada.</p></div>
-<div class="qa"><h3 class="d" style="margin:0 0 8px;font-size:26px">¿Dónde está la consulta?</h3><p class="muted" style="margin:0;font-size:16px;line-height:1.7">En C/ O'Donnell 32, 28009 Madrid, a pocos minutos del Retiro. También atiendo online.</p></div>
-<div class="qa"><h3 class="d" style="margin:0 0 8px;font-size:26px">¿Cómo se paga?</h3><p class="muted" style="margin:0;font-size:16px;line-height:1.7">Presencial: tarjeta o efectivo al terminar. Online: Bizum o transferencia.</p></div>
-</div>
-</div>
-</section>
-
-<section style="padding:110px 0 120px;background:#F3EDF6;border-radius:56px 56px 0 0">
-<div class="wrap" style="display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center">
-<h2 class="d h2" style="margin:0;font-size:60px;line-height:1.04;max-width:720px;text-wrap:balance">Llevas mucho tiempo cuidando de todos. Te toca.</h2>
-<div style="display:flex;flex-direction:column;gap:12px">
-<a href="#form" class="btn btn-p">Pedir llamada gratuita</a>
-<a href="https://wa.me/34601543169" class="btn btn-g">Escribir por WhatsApp</a>
+<section class="end">
+<div class="wrap">
+<h2>Llevas mucho tiempo cuidando de todos. Te toca.</h2>
+<div class="end-row">
+<p>15 minutos, gratis y sin compromiso.<br><a href="tel:+34601543169">(+34) 601 543 169</a> · <a href="https://wa.me/34601543169">WhatsApp</a> · C/ O'Donnell 32, 28009 Madrid</p>
+<a href="#contacto" class="btn btn-l">Pedir llamada gratuita</a>
 </div>
 </div>
 </section>
 </main>
-
-<footer style="background:#12254A;color:#D6DDEB;padding:30px 0;font-size:13px">
-<div class="wrap" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
-<span>María Sol Prada. Psicóloga General Sanitaria, M-42378. C/ O'Donnell 32, Madrid.</span>
-<span style="display:flex;gap:18px"><a href="#" style="color:#D6DDEB">Aviso legal</a><a href="#" style="color:#D6DDEB">Privacidad</a></span>
+<footer>
+<div class="wrap">
+<span>María Sol Prada · Psicóloga General Sanitaria · M-42378 · C/ O'Donnell 32, Madrid</span>
+<span style="display:flex;gap:20px"><a href="#">Aviso legal</a><a href="#">Privacidad</a><a href="#">Cookies</a></span>
 </div>
 </footer>
-
-<div class="sticky-m" style="position:sticky;bottom:0;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid #E4DCEA;padding:10px 14px;gap:10px">
-<a href="tel:+34601543169" class="btn btn-g" style="flex:1;min-height:48px">Llamar</a>
-<a href="https://wa.me/34601543169" class="btn btn-p" style="flex:1;min-height:48px">WhatsApp</a>
-</div>
-</div>
+<div class="sticky-m"><a href="tel:+34601543169" class="btn btn-l" style="border-color:var(--ink)">Llamar</a><a href="https://wa.me/34601543169" class="btn btn-d">WhatsApp</a></div>
 </body>
 </html>
