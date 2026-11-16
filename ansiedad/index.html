@@ -141,13 +141,42 @@ footer a{color:#9FAAC0}
 .back{display:inline-block;margin-top:8px;font-weight:600;font-size:15px}
 .sticky-m{display:none}
 @media (max-width:900px){.mini{padding:72px 0}.mini h2{font-size:48px}.sticky-m{display:flex;position:sticky;bottom:0;z-index:10;gap:10px;padding:10px 14px;background:rgba(255,255,255,.96);border-top:1px solid var(--line)}.sticky-m .btn{flex:1;min-height:48px;padding:0 12px}}
+
+/* menú completo */
+.nav{align-items:center}
+.dd{position:relative}
+.dd summary{list-style:none;cursor:pointer;font-size:14px;font-weight:500;color:var(--ink);display:flex;align-items:center;gap:6px}
+.dd summary::-webkit-details-marker{display:none}
+.dd summary::after{content:"";width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-3px)}
+.dd-menu{position:absolute;top:calc(100% + 18px);left:-20px;background:#fff;border:1px solid var(--line);border-radius:4px;box-shadow:0 20px 40px -20px rgba(15,34,66,.25);padding:10px 0;min-width:260px;display:flex;flex-direction:column}
+.dd-menu a{padding:10px 20px;font-size:14px}
+.dd-menu a:hover{background:var(--blush)}
+.nav a[aria-current="page"],.dd-menu a[aria-current="page"]{color:var(--blue);font-weight:600}
+.mnav{display:none}
+@media (max-width:900px){
+.mnav{display:block;position:relative}
+.mnav summary{list-style:none;cursor:pointer;font-weight:600;font-size:14px;padding:10px 0}
+.mnav summary::-webkit-details-marker{display:none}
+.mnav-menu{position:absolute;right:0;top:calc(100% + 10px);background:#fff;border:1px solid var(--line);border-radius:4px;box-shadow:0 20px 40px -20px rgba(15,34,66,.3);padding:10px 0;min-width:250px;display:flex;flex-direction:column;z-index:20}
+.mnav-menu a{padding:10px 18px;font-size:14.5px;color:var(--ink);text-decoration:none}
+.mnav-menu hr{border:none;border-top:1px solid var(--line);margin:6px 0}
+}
 </style>
 </head>
 <body>
 <header class="lhead">
 <div class="bar">
 <a href="../" aria-label="Sol Prada, inicio"><img src="https://mariasolpradapsicologa.com/wp-content/uploads/2025/07/Sol-Prada-psicologia-sanitaria-1.png" alt="Sol Prada, psicología sanitaria" width="1598" height="592" style="height:48px;width:auto;display:block"></a>
-<div style="display:flex;align-items:center;gap:22px">
+<nav class="nav" aria-label="Principal">
+<a href="../">Inicio</a>
+<a href="../#sobre-mi">Sobre mí</a>
+<a href="../#como-trabajo">Cómo trabajo</a>
+<details class="dd"><summary>Terapias</summary><div class="dd-menu"><a href="../ansiedad/" aria-current="page">Ansiedad y estrés</a><a href="../autoestima/">Autoestima y límites</a><a href="../dependencia-emocional/">Dependencia emocional</a><a href="../depresion/">Depresión</a><a href="../duelo/">Duelo y cambios vitales</a><a href="../perinatal/">Psicología perinatal</a></div></details>
+<a href="../#precios">Precios</a>
+<a href="../gracias/">Gracias</a>
+</nav>
+<div style="display:flex;align-items:center;gap:22px"><details class="mnav"><summary>Menú</summary><div class="mnav-menu">
+<a href="../">Inicio</a><a href="../#sobre-mi">Sobre mí</a><a href="../#como-trabajo">Cómo trabajo</a><a href="../#precios">Precios</a><hr><a href="../ansiedad/" aria-current="page">Ansiedad y estrés</a><a href="../autoestima/">Autoestima y límites</a><a href="../dependencia-emocional/">Dependencia emocional</a><a href="../depresion/">Depresión</a><a href="../duelo/">Duelo y cambios vitales</a><a href="../perinatal/">Psicología perinatal</a><hr><a href="../gracias/">Página de gracias</a></div></details>
 <a href="tel:+34601543169" class="hide-m" style="font-weight:600;font-size:14px;text-decoration:none;color:var(--ink)">601 543 169</a>
 <a href="#contacto" class="btn btn-d" style="min-height:44px;padding:0 20px">Pedir llamada gratuita</a>
 </div>
