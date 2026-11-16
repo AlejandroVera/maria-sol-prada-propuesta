@@ -119,6 +119,19 @@ footer a{color:#9FAAC0}
 .prices{grid-template-columns:1fr;gap:28px}.price{border-left:none;padding:0}
 }
 
+/* elementos visuales */
+.manifesto .wrap{display:grid;grid-template-columns:1fr 340px;gap:64px;align-items:center}
+.manifesto .art-b{width:100%;height:auto}
+.manifesto p.small{margin-left:0}
+.about{position:relative;overflow:hidden}
+.art-p{width:180px;height:auto;margin-top:40px}
+.how{background-color:var(--ink);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='900' viewBox='0 0 900 900'%3E%3Cg fill='none' stroke='%23F3A6E6' stroke-opacity='.13'%3E%3Ccircle cx='450' cy='450' r='120'/%3E%3Ccircle cx='450' cy='450' r='200'/%3E%3Ccircle cx='450' cy='450' r='280'/%3E%3Ccircle cx='450' cy='450' r='360'/%3E%3Ccircle cx='450' cy='450' r='440'/%3E%3C/g%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right -260px top -260px;background-size:900px}
+.end{background-color:var(--ink);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='900' viewBox='0 0 900 900'%3E%3Cg fill='none' stroke='%23F3A6E6' stroke-opacity='.13'%3E%3Ccircle cx='450' cy='450' r='120'/%3E%3Ccircle cx='450' cy='450' r='200'/%3E%3Ccircle cx='450' cy='450' r='280'/%3E%3Ccircle cx='450' cy='450' r='360'/%3E%3Ccircle cx='450' cy='450' r='440'/%3E%3C/g%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right -300px bottom -420px;background-size:900px}
+.start{background-color:var(--blush);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='600' viewBox='0 0 700 600'%3E%3Cpath d='M120 300c-40-140 80-260 240-250s290 120 260 260-150 260-300 240S160 440 120 300z' fill='%23ffffff' fill-opacity='.55'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right -80px center;background-size:720px}
+.rows a{grid-template-columns:52px 5fr 6fr 1fr}
+.ico{width:34px;height:34px;align-self:center}
+@media (max-width:900px){.manifesto .wrap{grid-template-columns:1fr}.manifesto .art-b{max-width:220px}.rows a{grid-template-columns:1fr}.art-p{width:120px}}
+
 .lhead .bar{justify-content:space-between}
 .lhead~main .hero h1{font-size:70px;line-height:1}
 @media (max-width:900px){.lhead~main .hero h1{font-size:46px}}
@@ -159,10 +172,22 @@ footer a{color:#9FAAC0}
 </section>
 
 <section class="manifesto">
-<div class="wrap">
+<div class="wrap"><div>
 <p class="big">Levantarte cuesta. Lo que antes te gustaba ha perdido sentido, te sientes sin energía y a veces piensas que <em>esto ya no va a cambiar.</em></p>
 <p class="small">Esa sensación forma parte de lo que estás viviendo, no es una verdad sobre tu futuro. Se puede salir, y no tienes por qué hacerlo a solas.</p>
-</div>
+</div><svg class="art-b" viewBox="0 0 400 360" role="img" aria-label="Ilustración de una mariposa cuyas alas dibujan los pliegues de un cerebro">
+<path d="M200 172C176 128 128 46 68 50C26 53 16 112 44 156C72 198 148 196 200 178Z" fill="#F3A6E6" fill-opacity=".55" stroke="#0F2242" stroke-width="1.2"/>
+<path d="M200 184C162 192 104 210 92 258C82 300 128 324 160 294C186 268 196 222 200 188Z" fill="#014589" fill-opacity=".14" stroke="#0F2242" stroke-width="1.2"/>
+<path d="M200 172C224 128 272 46 332 50C374 53 384 112 356 156C328 198 252 196 200 178Z" fill="#014589" fill-opacity=".14" stroke="#0F2242" stroke-width="1.2"/>
+<path d="M200 184C238 192 296 210 308 258C318 300 272 324 240 294C214 268 204 222 200 188Z" fill="#F3A6E6" fill-opacity=".55" stroke="#0F2242" stroke-width="1.2"/>
+<g fill="none" stroke="#0F2242" stroke-width="1" stroke-linecap="round" stroke-opacity=".55">
+<path d="M64 92c22-16 46 2 38 22s20 32 44 20"/><path d="M56 132c26-8 34 22 64 26s44-4 60 8"/><path d="M98 64c24-6 42 16 32 36"/><path d="M112 238c16-12 34 0 30 18s14 24 30 14"/>
+<path d="M336 92c-22-16-46 2-38 22s-20 32-44 20"/><path d="M344 132c-26-8-34 22-64 26s-44-4-60 8"/><path d="M302 64c-24-6-42 16-32 36"/><path d="M288 238c-16-12-34 0-30 18s-14 24-30 14"/>
+</g>
+<ellipse cx="200" cy="186" rx="5.5" ry="48" fill="#0F2242"/>
+<path d="M197 140c-6-26-20-42-34-46M203 140c6-26 20-42 34-46" fill="none" stroke="#0F2242" stroke-width="1.3" stroke-linecap="round"/>
+<circle cx="162" cy="93" r="3" fill="#0F2242"/><circle cx="238" cy="93" r="3" fill="#0F2242"/>
+</svg></div>
 </section>
 
 <section class="how">
