@@ -190,6 +190,19 @@ footer a{color:#9FAAC0}
 .why p{color:#CBD2E1}
 .call-row{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
 .call-row p{color:#CBD2E1}.call-row a:not(.btn){color:#fff}
+.fg-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.fgp{background:#fff;border:1px solid var(--line);border-radius:4px;overflow:hidden;display:flex;flex-direction:column}
+.fgp-art{background:var(--blush);display:flex;align-items:center;justify-content:center;height:190px}
+.fgp-art svg{height:150px;width:auto}
+.fgp-body{padding:30px 34px 34px;display:flex;flex-direction:column;gap:16px}
+.fgp h3{font-size:34px;line-height:1.05}
+.fgp ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.fgp li{display:grid;grid-template-columns:18px 1fr;gap:10px;color:var(--muted);font-size:16px;line-height:1.6}
+.fgp li::before{content:"";width:7px;height:7px;border-radius:50%;background:#E58BD6;margin-top:10px}
+.fg-close{margin-top:28px;background:var(--ink);color:#fff;border-radius:4px;padding:40px 44px;display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center}
+.fg-close p.q{font-family:'Cormorant Garamond',serif;font-size:34px;line-height:1.2}
+.fg-close p.s{color:#CBD2E1}
+@media (max-width:900px){.fg-grid,.fg-close{grid-template-columns:1fr}.fgp-body{padding:24px}.fg-close{padding:30px 24px}.fg-close p.q{font-size:27px}}
 @media (max-width:900px){.feel,.about2,.testi,.call{padding:72px 0}.feel h2,.testi h2,.call h2{font-size:46px}.feel-grid,.t-grid,.why{grid-template-columns:1fr;gap:32px}}
 </style>
 </head>
@@ -252,7 +265,29 @@ footer a{color:#9FAAC0}
 <section class="feel" style="padding-top:0">
 <div class="wrap">
 <h2>Vivir con ansiedad suele sentirse así</h2>
-<div class="feel-grid"><div class="fl"><h3>Nerviosismo y preocupación constante</h3><p>Tu cabeza no se apaga. Anticipas lo que puede salir mal y te cuesta disfrutar del presente.</p></div><div class="fl"><h3>Sentir tu cuerpo raro</h3><p>Taquicardia, presión en el pecho, nudo en el estómago o sensación de ahogo, sin una causa clara.</p></div><div class="fl"><h3>Cansancio que no se va</h3><p>Duermes mal o te despiertas agotada o agotado, como si llevaras días en alerta.</p></div><div class="fl"><h3>Una vida que se va limitando</h3><p>Empiezas a evitar planes, lugares o conversaciones para no pasarlo mal, y tu mundo se hace más pequeño.</p></div><div class="fl"><h3>Relaciones que se resienten</h3><p>Estás más irritable, necesitas que todo esté bajo control o te cuesta explicar a los demás lo que te pasa.</p></div><div class="fl hl"><p>Si te reconoces en varias de estas situaciones, no estás exagerando. La ansiedad se puede entender y se puede trabajar.</p></div></div>
+<div class="fg-grid"><article class="fgp"><div class="fgp-art"><svg viewBox="0 0 200 160" aria-hidden="true">
+<circle cx="104" cy="66" r="44" fill="#F3A6E6" fill-opacity=".45"/>
+<path fill="none" stroke="#0F2242" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M66 150c0-18-8-24-10-36-9-2-9-12-4-16-6-34 16-62 50-62 36 0 56 26 52 58-3 24-20 36-26 56"/>
+<path fill="none" stroke="#014589" stroke-width="1.6" stroke-linecap="round" d="M84 70c6-18 34-18 32 0s-30 16-24-2 34-20 38 2-20 22-30 8 4-26 26-22 22 20 6 24"/>
+<circle cx="150" cy="30" r="3" fill="#014589"/><circle cx="162" cy="44" r="2" fill="#014589"/><circle cx="170" cy="22" r="2.4" fill="#014589"/>
+</svg></div><div class="fgp-body"><h3>En tu cabeza</h3><ul><li>Le das vueltas a todo, incluso a conversaciones de hace días.</li><li>Anticipas lo peor: «¿y si sale mal?», «¿y si me pasa algo?», «¿y si no puedo?».</li><li>Por la noche, en cuanto apagas la luz, tu mente se enciende.</li><li>Te cuesta concentrarte y sientes que no llegas a nada.</li><li>Necesitas tenerlo todo bajo control para poder estar tranquila o tranquilo.</li></ul></div></article><article class="fgp"><div class="fgp-art"><svg viewBox="0 0 220 160" aria-hidden="true">
+<path fill="none" stroke="#0F2242" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M70 150c0-30 10-46 22-54-10-8-14-20-12-32 4-22 22-34 40-30 18 4 30 22 26 44-2 10-8 16-14 20 14 8 24 24 24 52"/>
+<path d="M121 112s-16-10-16-22a9 9 0 0 1 16-6 9 9 0 0 1 16 6c0 12-16 22-16 22z" fill="#F3A6E6" stroke="#0F2242" stroke-width="1.4"/>
+<path fill="none" stroke="#014589" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M8 128h44l8-22 10 40 9-30 6 12h135"/>
+</svg></div><div class="fgp-body"><h3>En tu cuerpo</h3><ul><li>El corazón se acelera sin un motivo claro.</li><li>Presión en el pecho, nudo en el estómago o en la garganta.</li><li>Sensación de que te falta el aire, mareo o de estar como fuera de ti.</li><li>Tensión en la mandíbula, el cuello y los hombros, o dolores de cabeza frecuentes.</li><li>Te han dicho que físicamente estás bien, pero tú lo sigues sintiendo.</li></ul></div></article><article class="fgp"><div class="fgp-art"><svg viewBox="0 0 220 160" aria-hidden="true">
+<circle cx="110" cy="80" r="66" fill="none" stroke="#0F2242" stroke-width="1.2" stroke-dasharray="4 6" stroke-opacity=".5"/>
+<circle cx="110" cy="80" r="44" fill="none" stroke="#0F2242" stroke-width="1.2" stroke-dasharray="4 6" stroke-opacity=".7"/>
+<circle cx="110" cy="80" r="22" fill="#F3A6E6" fill-opacity=".6" stroke="#0F2242" stroke-width="1.4"/>
+<circle cx="110" cy="74" r="5" fill="#0F2242"/><path fill="none" stroke="#0F2242" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M101 92c2-7 6-10 9-10s7 3 9 10"/>
+<path fill="none" stroke="#014589" stroke-width="1.6" stroke-linecap="round" d="M176 34l12-12M188 34l-12-12M30 126l12-12M42 126l-12-12M180 128l10-10M190 128l-10-10"/>
+</svg></div><div class="fgp-body"><h3>En tu día a día</h3><ul><li>Evitas sitios, planes o conversaciones por si te encuentras mal.</li><li>Cancelas a última hora y después te sientes culpable.</li><li>Te levantas cansada o cansado aunque hayas dormido.</li><li>Buscas síntomas en internet y terminas más asustada o asustado.</li><li>Sientes que tu mundo se ha ido haciendo más pequeño.</li></ul></div></article><article class="fgp"><div class="fgp-art"><svg viewBox="0 0 220 160" aria-hidden="true">
+<circle cx="62" cy="58" r="16" fill="#F3A6E6" fill-opacity=".6" stroke="#0F2242" stroke-width="1.5"/>
+<path fill="none" stroke="#0F2242" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M32 140c2-30 14-48 30-48s28 18 30 48"/>
+<circle cx="158" cy="58" r="16" fill="#014589" fill-opacity=".14" stroke="#0F2242" stroke-width="1.5"/>
+<path fill="none" stroke="#0F2242" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M128 140c2-30 14-48 30-48s28 18 30 48"/>
+<path fill="none" stroke="#014589" stroke-width="1.6" stroke-linecap="round" d="M96 96c4-6 8-6 12 0s8 6 12 0"/>
+<path fill="none" stroke="#014589" stroke-width="1.6" stroke-linecap="round" d="M96 112c4-6 8-6 12 0s8 6 12 0" stroke-opacity=".45"/>
+</svg></div><div class="fgp-body"><h3>En tus relaciones</h3><ul><li>Estás más irritable y saltas por cosas pequeñas.</li><li>Necesitas que te confirmen una y otra vez que todo está bien.</li><li>Te cuesta explicar lo que te pasa y sientes que no te entienden.</li><li>Dices «no puedo» más de lo que te gustaría.</li><li>Te preocupa ser una carga para las personas que quieres.</li></ul></div></article></div><div class="fg-close"><p class="q">Y quizá lo más agotador: que por fuera nadie lo note, mientras por dentro no paras.</p><p class="s">Si te reconoces en varias de estas situaciones, no estás exagerando ni es «cosa de carácter». La ansiedad tiene explicación y, con el acompañamiento adecuado, deja de ocupar tanto espacio.</p></div>
 </div>
 </section>
 
